@@ -193,9 +193,4 @@ See [`docs/design.pdf`](docs/design.pdf) for:
 ## 👤 Author
 
 **Andrea Ongomefen**  
-CMSC203 — CRN 31776  
-*Instructor: Prof. Tanveer*
 
----
-
-*"I pledge that I have completed this programming assignment independently. I have not copied the code from a student or any source."*
