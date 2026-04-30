@@ -182,10 +182,10 @@ See [`docs/design.pdf`](docs/design.pdf) for:
 
 ## 📋 TODO
 
-- [ ] Implement `caesarEncryption` / `caesarDecryption`
-- [ ] Implement `vigenereEncryption` / `vigenereDecryption`
-- [ ] Implement `playfairEncryption` / `playfairDecryption`
-- [ ] Add Javadoc to all public methods
+- [x] Implement `caesarEncryption` / `caesarDecryption`
+- [x] Implement `vigenereEncryption` / `vigenereDecryption`
+- [x] Implement `playfairEncryption` / `playfairDecryption`
+- [x] Add Javadoc to all public methods
 - [ ] Add `build.gradle` or `pom.xml`
 
 ---
