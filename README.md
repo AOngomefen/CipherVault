@@ -111,6 +111,8 @@ CipherVault/
 │   └── AOngomefen_Assignment3.pdf      # Pseudo-code and UML design document
 ├── build.gradle                        # Gradle build config (JavaFX + JUnit 5)
 ├── settings.gradle
+├── gradlew                             # Gradle wrapper (macOS/Linux)
+├── gradlew.bat                         # Gradle wrapper (Windows)
 └── README.md
 ```
 
@@ -118,10 +120,10 @@ CipherVault/
 
 ## 🧪 Running Tests
 
-Tests use **JUnit 5**. Run them with Gradle:
+Tests use **JUnit 5**. Run them with the Gradle wrapper (no Gradle install needed):
 
 ```bash
-gradle test
+./gradlew test
 ```
 
 ### Test coverage includes:
@@ -137,9 +139,11 @@ gradle test
 Requires **JDK 17+**. JavaFX is managed automatically by the Gradle build.
 
 ```bash
-# Build and run with Gradle
-gradle run
+# Build and run from Terminal (no Gradle install needed)
+./gradlew run
 ```
+
+The Gradle wrapper (`gradlew`) automatically downloads the correct Gradle version and JavaFX native libraries for your platform (including Apple Silicon / M1).
 
 Or open in **IntelliJ IDEA** or **Eclipse** and import as a Gradle project.
 
@@ -186,5 +190,5 @@ See [`docs/design.pdf`](docs/design.pdf) for:
 
 ## 👤 Author
 
-**Andrea Ongomefen**    
+**Andrea Ongomefen**        
 
