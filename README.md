@@ -100,14 +100,17 @@ The JavaFX interface (`FXMainPane`) provides:
 ```
 CipherVault/
 ├── src/
-│   ├── CryptoManager.java      # Core cipher logic (static utility class)
-│   ├── FXMainPane.java         # JavaFX UI layout and button handlers
-│   └── FXDriver.java           # Application entry point (extends Application)
-├── tests/
-│   ├── CryptoManagerPublicTest.java   # Basic correctness tests
-│   └── CryptoManagerGFATest.java      # Boundary + edge case tests
-├── docs/
-│   └── design.pdf              # Pseudo-code and UML design document
+│   ├── main/java/BobsCircus/
+│   │   ├── CryptoManager.java          # Core cipher logic (static utility class)
+│   │   ├── FXMainPane.java             # JavaFX UI layout and button handlers
+│   │   └── FXDriver.java               # Application entry point (extends Application)
+│   └── test/java/BobsCircus/
+│       ├── CryptoManagerPublicTest.java # Basic correctness tests
+│       └── CryptoManagerGFATest.java   # Boundary + edge case tests
+├── doc/
+│   └── AOngomefen_Assignment3.pdf      # Pseudo-code and UML design document
+├── build.gradle                        # Gradle build config (JavaFX + JUnit 5)
+├── settings.gradle
 └── README.md
 ```
 
@@ -115,13 +118,9 @@ CipherVault/
 
 ## 🧪 Running Tests
 
-Tests use **JUnit 5**. With your IDE or build tool of choice:
+Tests use **JUnit 5**. Run them with Gradle:
 
 ```bash
-# With Maven (if configured)
-mvn test
-
-# With Gradle
 gradle test
 ```
 
@@ -135,19 +134,14 @@ gradle test
 
 ## 🚀 Running the App
 
-Requires **JDK 17+** and **JavaFX 17+** on the module path.
+Requires **JDK 17+**. JavaFX is managed automatically by the Gradle build.
 
 ```bash
-javac --module-path /path/to/javafx-sdk/lib \
-      --add-modules javafx.controls,javafx.fxml \
-      src/FXDriver.java src/FXMainPane.java src/CryptoManager.java
-
-java --module-path /path/to/javafx-sdk/lib \
-     --add-modules javafx.controls \
-     FXDriver
+# Build and run with Gradle
+gradle run
 ```
 
-Or simply open in **IntelliJ IDEA** or **Eclipse** with JavaFX configured.
+Or open in **IntelliJ IDEA** or **Eclipse** and import as a Gradle project.
 
 ---
 
@@ -186,11 +180,11 @@ See [`docs/design.pdf`](docs/design.pdf) for:
 - [x] Implement `vigenereEncryption` / `vigenereDecryption`
 - [x] Implement `playfairEncryption` / `playfairDecryption`
 - [x] Add Javadoc to all public methods
-- [ ] Add `build.gradle` or `pom.xml`
+- [x] Add `build.gradle`
 
 ---
 
 ## 👤 Author
 
-**Andrea Ongomefen**  
+**Andrea Ongomefen**    
 
