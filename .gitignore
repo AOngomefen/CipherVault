@@ -21,6 +21,9 @@ target/
 .DS_Store
 Thumbs.db
  
+# Gradle
+.gradle/
+
 # JavaFX runtime (don't commit SDK)
 javafx-sdk/
  
