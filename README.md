@@ -161,10 +161,10 @@ See [`docs/design.pdf`](docs/design.pdf) for:
 +------------------------------------------+
 |             CryptoManager                |
 +------------------------------------------+
-| - LOWER_RANGE : char = ' '              |
-| - UPPER_RANGE : char = '_'              |
-| - RANGE       : int = 64               |
-| - ALPHABET64  : String                  |
+| - LOWER_RANGE : char = ' '               |
+| - UPPER_RANGE : char = '_'               |
+| - RANGE       : int = 64                 |
+| - ALPHABET64  : String                   |
 +------------------------------------------+
 | + isStringInBounds(plainText) : boolean  |
 | + caesarEncryption(text, key) : String   |
